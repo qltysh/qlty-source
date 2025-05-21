@@ -17,9 +17,9 @@
   Alternatively, you can use a branch instead of a tag:
 
 ```toml
-  [[source]]
-  name = "example-source"
-  repository = "https://github.com/username/repo-name"
+ [[source]]
+  name = "qlty-source"
+  repository = "https://github.com/qltysh/qlty-source"
   branch = "main"
 ```
 
