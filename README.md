@@ -23,4 +23,4 @@
   branch = "main"
 ```
 
-Using one vs the other will depend on whether you want repositories to "opt-in" to changes in the standarized config (by bumping the tag), or receive them automatically (by specifying a branch). 
+Using one vs the other will depend on whether you want repositories to "opt-in" to changes in the standardized config (by bumping the tag), or receive them automatically (by specifying a branch). 
