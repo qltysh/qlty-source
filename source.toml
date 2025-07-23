@@ -1,2 +1,115 @@
+
+[runtimes.enabled]
+node = "19.6.0"
+python = "3.11.7"
+rust = "nightly"
+
+[smells]
+mode = "comment"
+
+[[plugin]]
+name = "checkov"
+skip_upstream = true
+
+[[plugin]]
+name = "trufflehog"
+skip_upstream = true
+
+[[plugin]]
+name = "prettier"
+version = "3.4.1"
+
+[[plugin]]
+name = "actionlint"
+
+[[plugin]]
+name = "osv-scanner"
+skip_upstream = true
+
+[[plugin]]
+name = "markdownlint"
+drivers = ["lint"]
+
+[[plugin]]
+name = "dotenv-linter"
+
+[[plugin]]
+name = "ripgrep"
+
+[[plugin]]
+name = "eslint"
+version = "8.57.1"
+package_file = ".qlty/configs/package.json"
+
+[[plugin]]
+name = "stylelint"
+version = "15.10.3"
+extra_packages = ["stylelint-config-standard-scss@11.0.0"]
+
+[[plugin]]
+name = "trivy"
+version = "0.50.1"
+drivers = ["config"]
+skip_upstream = true
+
+[[plugin]]
+name = "knip"
+
+[[plugin]]
+name = "tsc"
+version = "5.5.2"
+
+[[plugin]]
+name = "terraform"
+
+[[source]]
+name = "default"
+default = true
+
+[[plugin]]
+name = "actionlint"
+
+[[plugin]]
+name = "clippy"
+
+[[plugin]]
+name = "rustfmt"
+
+[[plugin]]
+name = "eslint"
+version = "8.57.0"
+package_file = ".qlty/configs/package.json"
+
+[[plugin]]
+name = "markdownlint"
+version = "0.41.0"
+
+[[plugin]]
+name = "osv-scanner"
+# Disable during Git hooks because it is slow and requires network
+triggers = ["manual", "build"]
+
+[[plugin]]
+name = "prettier"
+
+[[plugin]]
+name = "ripgrep"
+
+[[plugin]]
+name = "shellcheck"
+
+[[plugin]]
+name = "shfmt"
+
+[[plugin]]
+name = "stylelint"
+version = "14.6.1"
+
+[[plugin]]
+name = "trufflehog"
+
+[[plugin]]
+name = "yamllint"
+
 [[plugin]]
 name = "shellcheck"
