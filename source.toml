@@ -7,6 +7,10 @@ rust = "nightly"
 [smells]
 mode = "comment"
 
+[[source]]
+name = "default"
+default = true
+
 [[plugin]]
 name = "checkov"
 skip_upstream = true
@@ -61,10 +65,6 @@ version = "5.5.2"
 
 [[plugin]]
 name = "terraform"
-
-[[source]]
-name = "default"
-default = true
 
 [[plugin]]
 name = "actionlint"
