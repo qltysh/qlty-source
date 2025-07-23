@@ -7,10 +7,6 @@ rust = "nightly"
 [smells]
 mode = "comment"
 
-[[source]]
-name = "default"
-default = true
-
 [[plugin]]
 name = "checkov"
 skip_upstream = true
