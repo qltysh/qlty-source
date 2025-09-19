@@ -23,11 +23,8 @@ version = "3.4.1"
 name = "actionlint"
 
 [[plugin]]
-name = "osv-scanner"
-skip_upstream = true
-
-[[plugin]]
 name = "markdownlint"
+version = "0.41.0"
 drivers = ["lint"]
 
 [[plugin]]
@@ -63,33 +60,16 @@ version = "5.5.2"
 name = "terraform"
 
 [[plugin]]
-name = "actionlint"
-
-[[plugin]]
 name = "clippy"
 
 [[plugin]]
 name = "rustfmt"
 
 [[plugin]]
-name = "eslint"
-version = "8.57.0"
-package_file = ".qlty/configs/package.json"
-
-[[plugin]]
-name = "markdownlint"
-version = "0.41.0"
-
-[[plugin]]
 name = "osv-scanner"
+skip_upstream = true
 # Disable during Git hooks because it is slow and requires network
 triggers = ["manual", "build"]
-
-[[plugin]]
-name = "prettier"
-
-[[plugin]]
-name = "ripgrep"
 
 [[plugin]]
 name = "shellcheck"
@@ -98,14 +78,4 @@ name = "shellcheck"
 name = "shfmt"
 
 [[plugin]]
-name = "stylelint"
-version = "14.6.1"
-
-[[plugin]]
-name = "trufflehog"
-
-[[plugin]]
 name = "yamllint"
-
-[[plugin]]
-name = "shellcheck"
