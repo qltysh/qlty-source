@@ -44,12 +44,6 @@ version = "15.10.3"
 extra_packages = ["stylelint-config-standard-scss@11.0.0"]
 
 [[plugin]]
-name = "trivy"
-version = "0.50.1"
-drivers = ["config"]
-skip_upstream = true
-
-[[plugin]]
 name = "knip"
 
 [[plugin]]
